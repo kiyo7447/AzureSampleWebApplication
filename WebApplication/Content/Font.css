@@ -1,0 +1,11 @@
+﻿@font-face {
+	font-family: "IPAm thin";
+	src: url(../fonts/ipam.ttf) format("truetype");
+}
+@font-face {
+	font-family: "IPAg thin";
+	src: url(../fonts/ipag.ttf) format("truetype");
+}
+
+body {
+}
