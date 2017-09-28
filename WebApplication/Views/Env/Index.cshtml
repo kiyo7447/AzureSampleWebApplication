@@ -3,20 +3,45 @@
     ViewBag.Title = "Index";
 }
 
+<style>
+  body {
+    font-family: "メイリオ", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo", "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  table {
+    /*border-collapse: separate;*/
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*border: solid 1px;*/
+  }
+  td, th {
+    padding: 3px;
+    border: solid 1px;
+  }
+
+
+</style>
 <h2>Index</h2>
 
-@Server.MachineName
-@Server.ScriptTimeout
-@Server.MapPath("")
+<table>
+  <tr><th>Key</th><th>Value</th></tr>
+
+  <tr><td>Server.MachineName</td><td>@Server.MachineName</td></tr>
+  <tr><td>Server.ScriptTimeout</td><td>@Server.ScriptTimeout</td></tr>
+  <tr><td>Server.MapPath</td><td>@Server.MapPath("")</td></tr>
+</table>
+
+
+<br />
 
 
 
 <table border="1">
   <tr><th>Key</th><th>Value</th></tr>
-  @foreach(var dic in Request.ServerVariables)
+  @foreach (var dic in Request.ServerVariables)
   {
       <tr>
-        <td>@dic</td><td>@Request.ServerVariables[dic.ToString()]</td>
+        <td>@dic</td>
+        <td>@Request.ServerVariables[dic.ToString()]</td>
       </tr>
   }
 
