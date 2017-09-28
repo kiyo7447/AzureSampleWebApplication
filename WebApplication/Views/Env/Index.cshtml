@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Server.MachineName
+@Server.ScriptTimeout
+@Server.MapPath("")
+
+
+
+<table border="1">
+  <tr><th>Key</th><th>Value</th></tr>
+  @foreach(var dic in Request.ServerVariables)
+  {
+      <tr>
+        <td>@dic</td><td>@Request.ServerVariables[dic.ToString()]</td>
+      </tr>
+  }
+
+
+</table>
