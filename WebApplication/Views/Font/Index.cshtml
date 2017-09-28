@@ -6,39 +6,44 @@
 <link href="~/Content/Font.css" rel="stylesheet" />
 
 <style>
-  body{
-    font-family:IPAMincho
+  body {
+    font-family: @(ViewBag.FontName == null ? "IPAg thin" : $"{ViewBag.FontName}")
   }
 
 </style>
 <h2>Font</h2>
+@Html.ActionLink(linkText: "IPA明朝", actionName: null, routeValues: new { id = "IPAm thin" }, htmlAttributes: null)
+@Html.ActionLink(linkText: "IPAゴシック", actionName: null, routeValues: new { id = "IPAg thin" },htmlAttributes:null)
 
 <h1>
-  ABCDEFGHIJKLMNOPQRS<br />
-  abcdefghijklmnopqrs<br />
+  ABCDEFGHIJKLMNOPQRST<br />
+  abcdefghijklmnopqrst<br />
   12345678901234567890<br />
   !"#$%&'()=-~^|\`{}[]<br />
   あいうれおかきくけこ<br />
+  亜衣兎絵御火来句毛来<br />
 </h1>
 <h2>
-  ABCDEFGHIJKLMNOPQRS<br />
-  abcdefghijklmnopqrs<br />
+  ABCDEFGHIJKLMNOPQRST<br />
+  abcdefghijklmnopqrst<br />
   12345678901234567890<br />
   !"#$%&'()=-~^|\`{}[]<br />
   あいうれおかきくけこ<br />
+  亜衣兎絵御火来句毛来<br />
 </h2>
 <h3>
-  ABCDEFGHIJKLMNOPQRS<br />
-  abcdefghijklmnopqrs<br />
+  ABCDEFGHIJKLMNOPQRST<br />
+  abcdefghijklmnopqrst<br />
   12345678901234567890<br />
   !"#$%&'()=-~^|\`{}[]<br />
   あいうれおかきくけこ<br />
+  亜衣兎絵御火来句毛来<br />
 </h3>
 
-  ABCDEFGHIJKLMNOPQRS<br />
-  abcdefghijklmnopqrs<br />
+  ABCDEFGHIJKLMNOPQRST<br />
+  abcdefghijklmnopqrst<br />
   12345678901234567890<br />
   !"#$%&'()=-~^|\`{}[]<br />
   あいうれおかきくけこ<br />
-
+  亜衣兎絵御火来句毛来<br />
 

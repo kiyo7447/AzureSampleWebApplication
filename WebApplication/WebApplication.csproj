@@ -249,7 +249,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>8798</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8798/</IISUrl>
+          <IISUrl>http://localhost:8798/WebApp</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
